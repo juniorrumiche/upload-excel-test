@@ -6,5 +6,5 @@
     $list = json_encode($result);
     // print_r($list);
 
-    echo $list;
+    echo $list; 
 ?>
