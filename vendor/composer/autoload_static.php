@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitbb727e262c43f5a819af349f03359def
+class ComposerStaticInit093b5ef5b797401da31e1fea8d067ee6
 {
     public static $files = array (
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
@@ -44,8 +44,8 @@ class ComposerStaticInitbb727e262c43f5a819af349f03359def
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -92,10 +92,10 @@ class ComposerStaticInitbb727e262c43f5a819af349f03359def
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitbb727e262c43f5a819af349f03359def::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitbb727e262c43f5a819af349f03359def::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitbb727e262c43f5a819af349f03359def::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitbb727e262c43f5a819af349f03359def::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit093b5ef5b797401da31e1fea8d067ee6::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit093b5ef5b797401da31e1fea8d067ee6::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit093b5ef5b797401da31e1fea8d067ee6::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit093b5ef5b797401da31e1fea8d067ee6::$classMap;
 
         }, null, ClassLoader::class);
     }
